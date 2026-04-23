@@ -1,4 +1,5 @@
 Audi A6 Virtual Instrument Cluster Simulation
+
 Descriere Generală
 Această aplicație reprezintă un simulator de bord auto (Instrument Cluster) dezvoltat în mediul de programare C#, utilizând tehnologia Windows Forms. Proiectul simulează comportamentul dinamic al unui vehicul Audi A6, integrând atât elemente de randare grafică în timp real, cât și o logică complexă de calcul pentru parametrii fizici ai motorului și transmisiei.
 
