@@ -40,3 +40,8 @@ Tastă  Funcție
  D     Activare semnalizare dreapta
  A     Activare lumini de avarie
  O     Dezactivare sisteme de semnalizare
+
+<img width="1083" height="650" alt="imagine2" src="https://github.com/user-attachments/assets/45c932d4-c1f9-46a5-bd70-218088638ef0" />
+<img width="1075" height="653" alt="imagine1" src="https://github.com/user-attachments/assets/f5a93eac-e8c4-4db1-9f4a-c59b11a5faea" />
+
+
