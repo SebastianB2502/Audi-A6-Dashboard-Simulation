@@ -1,51 +1,148 @@
-Audi A6 Virtual Instrument Cluster Simulation
+#  Audi A6 Virtual Instrument Cluster Simulation
 
-Această aplicație reprezintă un simulator de bord auto (Instrument Cluster) dezvoltat în mediul de programare C#, utilizând tehnologia Windows Forms. Proiectul simulează comportamentul dinamic al unui vehicul Audi A6, integrând atât elemente de randare grafică în timp real, cât și o logică complexă de calcul pentru parametrii fizici ai motorului și transmisiei.
+##  Descriere
 
-Funcționalități Implementate
+**Audi A6 Virtual Instrument Cluster Simulation** este o aplicație desktop dezvoltată în **C# (Windows Forms)** care simulează un bord auto digital.
 
-1. Vizualizarea Datelor Telemetrice
-   
-Turometru și Vitezometru: Redare grafică a instrumentelor analogice și digitale, cu scalare dinamică a acelor indicatoare.
+Proiectul reproduce comportamentul dinamic al unui vehicul real, combinând:
 
-Monitorizarea Temperaturii: Algoritm de simulare a încălzirii motorului în funcție de sarcină și regimul de turații.
+* randare grafică în timp real
+* simulare de parametri fizici (viteză, turații, temperatură)
+* logică de transmisie automată
 
-Sistem de Gestiune a Combustibilului: Calculul consumului în timp real bazat pe viteza de deplasare și treapta de viteză selectată.
+---
 
-2. Transmisie și Cinematică
-   
-Cutie de Viteze Automată: Implementarea unei logici de transmisie cu 8 rapoarte (D1-D8), incluzând modul "Park" (P).
+##  Funcționalități principale
 
-Schimbare Automată a Treptelor: Logica de trecere între rapoartele de viteză este determinată algoritmic de pragul optim de turații (RPM) și viteză.
+###  1. Vizualizarea datelor telemetrice
 
-3. Semnalizare și Avertizare
-   
-Sistem de semnalizare direcțională (stânga/dreapta) și avarii, sincronizat prin timere dedicate pentru intermitență vizuală.
+* **Turometru & Vitezometru**
 
-<img width="1075" height="653" alt="imagine1" src="https://github.com/user-attachments/assets/f5a93eac-e8c4-4db1-9f4a-c59b11a5faea" />
+  * afișare analogică și digitală
+  * ac indicator animat în timp real
 
+* **Temperatura motorului**
 
-<img width="1083" height="650" alt="imagine2" src="https://github.com/user-attachments/assets/45c932d4-c1f9-46a5-bd70-218088638ef0" />
+  * simulare progresivă în funcție de sarcină și turații
 
-Specificații Tehnice
-Limbaj de Programare: C# (.NET Framework)
+* **Consum combustibil**
 
-Randare Grafică: Utilizarea bibliotecii GDI+ (System.Drawing) pentru desenarea procedurală a componentelor.
+  * calcul dinamic în funcție de:
 
-Optimizare: Implementarea clasei BufferedPanel cu tehnica de Double Buffering pentru eliminarea efectului de flicker și asigurarea unei fluidități ridicate la nivelul interfeței utilizator.
+    * viteză
+    * treapta de viteză
 
-Arhitectură: Abordare orientată pe obiecte, utilizând clase modulare pentru fiecare indicator în parte.
+---
 
-Interacțiunea cu Utilizatorul
-Sistemul este operat prin intermediul tastaturii, după inițializarea prealabilă prin butonul principal de control (Start/Stop).
+###  2. Transmisie și cinematică
 
-Tastă  Funcție
- W     Accelerare (Creșterea turației și a vitezei)
- S     Activare semnalizare stânga
- D     Activare semnalizare dreapta
- A     Activare lumini de avarie
- O     Dezactivare sisteme de semnalizare
+* **Cutie automată cu 8 trepte (D1–D8)**
 
+* **Moduri disponibile:**
 
+  * Drive (D)
+  * Park (P)
 
+* **Schimbare automată a treptelor**
 
+  * bazată pe:
+
+    * RPM (turații)
+    * viteză
+    * praguri optimizate
+
+---
+
+###  3. Sistem de semnalizare
+
+* Semnalizare:
+
+  * stânga
+  * dreapta
+  * avarii
+
+* Implementare:
+
+  * sistem de blink folosind **timere**
+  * sincronizare vizuală realistă
+
+---
+
+##  Control utilizator
+
+Aplicația este controlată din tastatură după apăsarea butonului **Start**.
+
+| Tastă | Funcție             |
+| ----- | ------------------- |
+| **W** | Accelerare          |
+| **S** | Semnalizare stânga  |
+| **D** | Semnalizare dreapta |
+| **A** | Avarii              |
+| **O** | Oprire semnalizare  |
+
+---
+
+##  Exemple vizuale
+
+### 🔹 Interfață principală
+
+![Cluster View](https://github.com/user-attachments/assets/f5a93eac-e8c4-4db1-9f4a-c59b11a5faea)
+
+---
+
+### 🔹 Funcționare în timp real
+
+![Live Simulation](https://github.com/user-attachments/assets/45c932d4-c1f9-46a5-bd70-218088638ef0)
+
+---
+
+##  Tehnologii utilizate
+
+* **C# (.NET Framework)**
+* **Windows Forms**
+* **GDI+ (System.Drawing)**
+
+---
+
+##  Optimizări
+
+* utilizare **Double Buffering**
+* eliminare efect **flicker**
+* randare fluidă în timp real
+
+---
+
+##  Arhitectură
+
+* programare orientată pe obiecte (OOP)
+* componente separate pentru:
+
+  * indicatori
+  * logică vehicul
+  * UI
+
+---
+
+##  Scopul proiectului
+
+Acest proiect a fost realizat pentru a demonstra:
+
+* abilități de programare în C#
+* lucru cu grafică 2D (GDI+)
+* simularea sistemelor dinamice
+* organizarea unui proiect modular
+
+---
+
+##  Posibile îmbunătățiri
+
+* integrare sunete (motor, semnalizare)
+* UI modern (WPF)
+* simulare mai realistă a fizicii
+* suport pentru input controller
+
+---
+
+##  Disclaimer
+
+Acesta este un proiect educațional și nu reflectă complet comportamentul unui sistem auto real.
