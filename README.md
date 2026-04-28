@@ -84,13 +84,13 @@ Aplicația este controlată din tastatură după apăsarea butonului **Start**.
 
 ##  Exemple vizuale
 
-### 🔹 Interfață principală
+###  Interfață principală
 
 ![Cluster View](https://github.com/user-attachments/assets/f5a93eac-e8c4-4db1-9f4a-c59b11a5faea)
 
 ---
 
-### 🔹 Funcționare în timp real
+###  Funcționare în timp real
 
 ![Live Simulation](https://github.com/user-attachments/assets/45c932d4-c1f9-46a5-bd70-218088638ef0)
 
